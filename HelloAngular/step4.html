@@ -8,9 +8,14 @@
 <body ng-app="step4App">
 	<div ng-controller="FriendsCtrl">
 		<button ng-click="loadFriends()">Load Friends</button>
+		<ul>
+			<li ng-repeat="friend in friends">
+				{{friend.LastName}}, {{friend.FirstName}}
+			</li>
+		</ul>
 	</div>
 
-	<script src="../angular.js"></script>
+	<script src="angular.js"></script>
 	<script src="step4.js"></script>
 </body>
 </html>
