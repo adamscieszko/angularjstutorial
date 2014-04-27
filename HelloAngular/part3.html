@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="app.css">
+	<title>Part3 - Inheritance</title>
+</head>
+<body ng-app="myApp">
+	<div ng-controller="ParentCtrl" class="scope">
+		<input type="text" ng-model="model.title" />
+		<button ng-click="greet()">Greet</button>
+
+		<div ng-controller="ChildCtrl" class="scope">
+			<input type="text" ng-model="model.title" />
+			<input type="text" ng-model="content" />
+			<button ng-click="setModel()">Set model</button>
+			<button ng-click="greet()">Greet</button>
+		</div>
+	</div>
+	
+	<script src="../angular.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>
